@@ -40,4 +40,18 @@ public class ContactTest {
     void toString_containsPhone() {
         assertTrue(contact3.toString().contains("555-0001"));
     }
+
+    // Addtional tests for step 7:
+
+    @Test
+    void toString_containsFirstandLastName() {
+        String[] testContact = contact3.getName().trim().split(" ");
+        assertEquals(2, testContact.length);
+    }
+
+    @Test
+    void toString_validLengthPhoneNumber() {
+        String testContact2 = contact.getPhone().replaceAll("[^0-9]", "");
+        assertTrue(testContact2.length() >= 10);
+    }
 }

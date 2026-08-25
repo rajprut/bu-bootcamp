@@ -12,3 +12,11 @@ There are 7 modules for the bootcamp.
  
 ## Programs
 Each module folder contains the Java source files from that module’s activity. Some screenshots and additional activities prior to the final module assignment is also included.
+
+## JUnit
+
+For module 2 what was needed to compile and run tests:
+
+To compile: javac -cp ".;lib/junit-platform-console-standalone-6.1.3.jar" module2/GradeAnalyzer.java module2/GradeAnalyzerTest.java
+
+To Run and pass tests: java -jar lib/junit-platform-console-standalone-6.1.3.jar execute --class-path "module2" --select-class GradeAnalyzerTest

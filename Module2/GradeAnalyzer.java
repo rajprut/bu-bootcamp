@@ -102,7 +102,7 @@ public class GradeAnalyzer {
             writer.newLine();
             writer.write(String.format(" C (70-79): " + countC));
             writer.newLine();
-            writer.write(String.format("D (60-69): " + countB));
+            writer.write(String.format("D (60-69): " + countD));
             writer.newLine();
             writer.write(String.format("F (below 60): " + countF));
 

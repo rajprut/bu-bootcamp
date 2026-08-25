@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void swap(int *a, int *b);
-void broken_swap(int a, int b)
+void broken_swap(int a, int b);
 
 int main()  {
     int num1 = 15;
@@ -12,6 +12,8 @@ int main()  {
     swap(&num1, &num2);
 
     printf("After swap:  x = %d, y = %d\n", num1, num2); 
+
+    broken_swap(num1, num2);
 
     return 0;
 }
@@ -28,5 +30,5 @@ void broken_swap(int a, int b) {
     int val = a;
     a = b;
     b = val;
-    printf("After swap:  x = %d, y = %d\n", a, b);
+    printf("After broken swap:  x = %d, y = %d\n", a, b);
 }
